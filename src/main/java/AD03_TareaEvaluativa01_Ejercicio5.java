@@ -1,8 +1,17 @@
-import org.vibur.dbcp.ViburDBCPDataSource;
+/**************************************
+ * Autor: Axel Álvarez Santos
+ * Fecha: 28/11/2024
+ * Tarea: AD03 Tarea Evaluativa 01
+ **************************************/
 
+import org.vibur.dbcp.ViburDBCPDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+/*
+ * Establece una conexión a una base de datos HSQLDB utilizando un pool de conexiones
+ * proporcionado por Vibur. La conexión se valida y se informa si es exitosa.
+ */
 public class AD03_TareaEvaluativa01_Ejercicio5 {
     
     // Punto de entrada principal
@@ -15,7 +24,7 @@ public class AD03_TareaEvaluativa01_Ejercicio5 {
             try (Connection conn = ds.getConnection()) {
                 
                 // Verifica si la conexión es válida
-                if (conn != null && conn.isValid(0)) {
+                if (conn.isValid(0)) {
                     System.out.println("Conexión establecida correctamente.");
                 } else {
                     System.out.println("No se pudo establecer la conexión.");
