@@ -1,14 +1,14 @@
 /**************************************
  * Autor: Axel Álvarez Santos
  * Fecha: 28/11/2024
- * Tarea: AD03 Tarea Evaluativa 01
+ * Tarea: AD03 Tarea Evaluativa 01 Ejercicio 5
  **************************************/
 
 import org.vibur.dbcp.ViburDBCPDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-/*
+/**
  * Establece una conexión a una base de datos HSQLDB utilizando un pool de conexiones
  * proporcionado por Vibur. La conexión se valida y se informa si es exitosa.
  */
