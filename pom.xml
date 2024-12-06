@@ -16,18 +16,33 @@
 
     <dependencies>
 
+        <!--
+            HSQLDB: Base de datos embebida
+            Dependencia para integrar HSQLDB en la aplicación Java
+            Proporciona una base de datos que se ejecuta dentro del proceso de la aplicación
+        -->
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.7.1</version>
         </dependency>
 
+        <!--
+            Vibur DBCP: Pool de conexiones de base de datos
+            Dependencia para integrar el pool de conexiones de Vibur
+            Proporciona pool de conexiones reutilizables para un manejo eficiente
+        -->
         <dependency>
             <groupId>org.vibur</groupId>
             <artifactId>vibur-dbcp</artifactId>
             <version>25.0</version>
         </dependency>
 
+        <!--
+            SLF4J Simple: API de logging, implementación simple
+            Dependencia para integrar una fachada de loggin, permite a Java utilizar distintos frameworks de logging
+            Proporciona funcionalidades de logging (registro de información, advertencias, errores, etc.)
+        -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
